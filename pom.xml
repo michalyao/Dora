@@ -26,8 +26,8 @@
     </properties>
 
     <modules>
+        <module>dora-common</module>
         <module>dora-time-tracker</module>
-        <module>timetracker</module>
     </modules>
 
     <dependencyManagement>
