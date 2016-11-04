@@ -1,0 +1,4 @@
+{
+  "url": "jdbc:hsqldb:file:./target/dora-time-tracker;shutdown=true",
+  "driverclass" : "org.hsqldb.jdbcDriver"
+}
