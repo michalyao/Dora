@@ -23,6 +23,10 @@ public class TemporalVerticle extends AbstractVerticle {
       LOG.info("handle a request");
     });
 
+    router.routeWithRegex(".*foo").handler(routingContext -> {
+      routingContext.response().end(routingContext.request().path());
+    });
+
    httpServer.requestHandler(router::accept).listen(8888);
     LOG.info("http start");
   }
